@@ -52,7 +52,7 @@ def carregar_arquivo(upload_file):
     if file1 and file2:
         df1 = carregar_arquivo(file1)
         df2 = carregar_arquivo(file2)
-
+    # etapa 2
         if df1 is not None and df2 is not None:
             st.header("2. Escolha a Coluna de Comparação")
             coluna1 = st.selectbox("Coluna Base (Arquivo 1)", df1.columns)
